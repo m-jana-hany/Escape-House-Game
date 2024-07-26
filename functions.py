@@ -64,8 +64,8 @@ def game():
                     "doors now.\n"
                 )
                 print(
-                    f"Choose {door1} (1) or {door2} (2) or"
-                    " {door3} (3) or q to quit\n"
+                    f"Choose {door1} (1) or {door2} (2) "
+                    f"or {door3} (3) or q to quit\n"
                 )
                 room_choice = input("Your choice 1/2/3/q: ")
                 score -= 10
@@ -80,7 +80,7 @@ def game():
                 print_pause("\nYou stand in front of the three doors.\n")
                 print(
                     f"Choose {door1} (1) or {door2} (2) or"
-                    " {door3} (3) or q to quit\n"
+                    f" {door3} (3) or q to quit\n"
                 )
                 room_choice = input("Your choice 1/2/3/q: ")
                 score += 10
@@ -116,7 +116,7 @@ def enter_room(choice, score, wrong_choices, items, rooms_visited):
 def enter_red_black(score, wrong_choices, items, rooms_visited):
     animal = random.choice(["wolf", "crocodile", "bear"])
     print_pause(f"You opened the {door1} door. In front"
-                " of you lies a {animal}.")
+                f" of you lies a {animal}.")
     print_pause(
         "Will you fight him with the stick? (1)\nOr scare him"
         " using the match? (2)\nq "
